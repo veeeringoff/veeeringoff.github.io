@@ -1,0 +1,10 @@
+# Site settings
+title: Veer-ing Optimally
+email: 
+description: "My thoughts on all things computers, machine learning and math"
+baseurl: ""
+url: "https://veeeringoff.github.io/"
+twitter_username: veeeringoff
+github_username:  veeeringoff
+
+markdown: kramdown

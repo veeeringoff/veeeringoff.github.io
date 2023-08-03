@@ -1,1 +1,1 @@
-# veeeringoff.github.io
+Repo for my [blog](https://veeeringoff.github.io/). Built using [Jekyll](https://jekyllrb.com/) and minimal theme inspired by the legendary Andrej Karpathy.
