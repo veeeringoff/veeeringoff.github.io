@@ -1,0 +1,24 @@
+baseURL = "https://veeringoff.github.io/"
+languageCode = "en-us"
+title = "Veering Optimally"
+theme = "till"
+
+enableRobotsTXT = true
+
+[taxonomies]
+
+[params]
+  description = "Notes on ML, systems, and learning the hard way"
+  math = false
+
+  [params.author]
+    name = "Veeresh"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
