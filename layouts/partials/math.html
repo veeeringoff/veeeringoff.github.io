@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-n99WzOmP45RJqh96W1WNoLHM85T9L3mZqNOnO79CNoC0zLpL9022R85aU0D80uD8" crossorigin="anonymous">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zk9W9fk9Mtk6p7S+6f7t55m++98BpsN3/k7M2NfU4J21zK7eW6A+e97u9L9ZtO/" crossorigin="anonymous"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMPW7Xub3y6WInH6vlsbbV6h6rOovK056vJ7D0g" crossorigin="anonymous"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            // Define your delimiters
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false},
+                {left: '\\[', right: '\\]', display: true}
+            ],
+            // This is crucial for your headers:
+            // It allows KaTeX to find math even if it's interrupted by <a> or <span> tags
+            includeHtml: true,
+            // Ensure headers (h1-h6) are not being ignored
+            ignoredTags: ["script", "noscript", "style", "textarea", "pre", "code", "option"],
+            // Prevents the whole page from crashing if you have a LaTeX typo
+            throwOnError: false
+        });
+    });
+</script>
+
+<!-- <style>
+    /* Optional: Fixes spacing issues for inline math in headers */
+    .katex-display {
+        margin: 1em 0;
+    }
+    .katex {
+        white-space: nowrap;
+    }
+</style> -->
+

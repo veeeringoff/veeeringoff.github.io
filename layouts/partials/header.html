@@ -8,3 +8,7 @@
         <li><a href="/notes/">Notes</a></li>
     </ul>
 </nav>
+
+{{ if .Params.math }}
+  {{ partial "math.html" . }}
+{{ end }}

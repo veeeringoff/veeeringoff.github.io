@@ -4,20 +4,30 @@ title = "Veering Optimally"
 theme = "till"
 
 enableRobotsTXT = true
+enableEmoji = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$']]
+          inline = [['$', '$']]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 
 [taxonomies]
 
 [params]
   description = "Notes on ML, systems, and learning the hard way"
-  math = false
+  math = true
+  showGraph = false
 
   [params.author]
     name = "Veeresh"
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
 
 [caches]
   [caches.images]
